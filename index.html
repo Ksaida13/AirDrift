@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=450 height=600></canvas>
+      <canvas id="unity-canvas" width=720 height=1280></canvas>
       <div id="unity-loading-bar">
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
@@ -49,11 +49,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/build0.loader.js";
+      var loaderUrl = buildUrl + "/build1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/build0.data",
-        frameworkUrl: buildUrl + "/build0.framework.js",
-        codeUrl: buildUrl + "/build0.wasm",
+        dataUrl: buildUrl + "/build1.data",
+        frameworkUrl: buildUrl + "/build1.framework.js",
+        codeUrl: buildUrl + "/build1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "GamePolygon",
         productName: "Snow Drift",
@@ -84,8 +84,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "450px";
-        canvas.style.height = "600px";
+        canvas.style.width = "720px";
+        canvas.style.height = "1280px";
       }
 
       loadingBar.style.display = "block";
